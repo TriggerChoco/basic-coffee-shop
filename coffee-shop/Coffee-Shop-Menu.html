@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Menu</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/c8fa595782.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav role="navigation">
+            <div class="navigation">
+                <img src="assets/images/coffeeshop.png" alt="logo" class="logo">
+                <ul class="navbar">
+                    <li><a href="Coffee-Shop-Home.html" class="nav-link">Home</a></li>
+                    <li><a href="Coffee-Shop-Menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="Coffee-Shop-About.html" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="menu-categories">
+            <ul class="menu">
+                <div class="menu-category-1">
+                    <li><a href="#" class="menu-categories">Hot Drinks</a></li>
+                </div>
+                <div class="menu-category-2">
+                    <li><a href="#" class="menu-categories">Cold Drinks</a></li>
+                </div>
+                <div class="menu-category-3">
+                    <li><a href="#" class="menu-categories">Donuts</a></li>
+                </div>
+                <div class="menu-category-4">
+                    <li><a href="#" class="menu-categories">Cookies</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="menu-items">
+        <div id="hot-drinks">
+            <h1 class="hot-drinks-text">Hot Drinks</h1>
+            <div class="item" onclick="addItem('Cappuchino', 4.99)"><img src="assets/images/Cappuchino.jpg" id="cappuchino" alt="Cappuchino" label="Cappuchino"></div>
+            <div class="item" onclick="addItem('Espresso', 6.99)"><img src="assets/images/Espresso.jpg" id="espresso" alt="Espresso" label="Espresso"></div>
+            <div class="item" onclick="addItem('Macchiato', 3.99)"><img src="assets/images/Macchiato.jpg" id="macchiato" alt="Macchiato" label="Macchiato"></div>
+            <div class="item" onclick="addItem('Mocha', 2.99)"><img src="assets/images/Mocha.jpg" id="mocha" alt="Mocha" label="Mocha"></div>
+        </div>
+        <div id="cold-drinks">
+            <h1>Cold Drinks</h1>
+            
+        </div>
+        <div id="donuts">
+            <h1>Donuts</h1>
+            
+        </div>
+        <div id="cookies">
+            <h1>Cookies</h1>
+            
+        </div>
+        </div>
+        <div id="shopping-cart">
+            <p>Items: <span id="item-count">0</span></p>
+            <p>Price: <span id="totalPrice">0.00</span></p>
+        </div>
+        <script src="Coffee-Shop.js"></script>
+    </body>
+</html>

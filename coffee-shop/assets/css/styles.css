@@ -1,0 +1,236 @@
+/*************************************************************/
+/* CSS RESET */
+/*************************************************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Jost', sans-serif;
+    background-color: #FFF5E9;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*************************************************************/
+/* GENERAL STYLES */
+/*************************************************************/
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 10rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+
+.logo {
+    height: 18rem;
+    width: 18rem;
+    margin-right: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #5C3F32;
+}
+
+.nav-link:hover {
+    color: #8A7467;
+}
+
+.shopping-cart {
+    color: #5C3F32;
+}
+
+.shopping-cart:hover {
+    color: #8A7467;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #5E4235;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 0 0 0 2rem;
+}
+
+.main-heading {
+    font-size: 6rem;
+    color: #FDFAEC;
+}
+
+.subheading {
+    color: #FDFAEC;
+    font-size: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.learn-more-btn {
+    text-decoration: none;
+    background-color: #7e685d;
+    border-radius: 3rem;
+    padding: 1rem 4rem;
+    color: #F6F5F2;
+}
+
+.heroimg {
+    height: 50rem;
+    margin-left: auto;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.menu-categories {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: left;
+    font-size: x-large;
+    color: #5C3F32;
+    text-decoration: none;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu-categories:hover {
+    color: #8A7467;
+}
+
+.menu-category-1 {
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+
+.menu-category-2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.menu-category-3 {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.menu-category-4 {
+    position: absolute;
+    top: 450px;
+    left: 30px;
+}
+
+#hot-drinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 300px;
+    justify-content: center;
+}
+
+.hot-drinks-text {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.hot-drink-pic {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* jost-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v15-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/jost-v15-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/jost-v15-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*
+* Palette: 
+* https://coolors.co/da94a5-f6f5f2-f6f5f2-ecc5ce-f6f5f2-f1d4da-e4afbb-f0d2d8-e09ead-c96d84
+*/
